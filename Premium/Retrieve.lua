@@ -29,27 +29,43 @@ end
 
 local User = decoded_or_err[1]
 local Premium = tonumber(User.Premium)
-table.insert(getgenv().EGHUsers,{
-	Name = tostring(User.Username),
-	UserID = tonumber(User.userID),
-	Fingerprint = tostring(User.Fingerprint),
-	Premium = (Premium == 0 and false or true)
-})
+
+
+getgenv().EGHUsers = {} 
+
+for _, User in ipairs(decoded_or_err) do
+    local premiumNum = tonumber(User.Premium) or 0  -- convert string to number, default 0
+    local isPremium = premiumNum > 0                -- true only if > 0
+
+    table.insert(getgenv().EGHUsers, {
+        Name = tostring(User.Username),
+        UserID = tonumber(User.userID),
+        Fingerprint = tostring(User.Fingerprint),
+        Premium = isPremium
+    })
+end
+
+
 print("---------------------")
 for i,v in pairs(EGHUsers) do
 	for k,a in pairs(v) do
 		print(k..":"..tostring(a))
 	end
-end
 print("---------------------")
+end
 
--- loop through all players in the game
 for _, plr in pairs(game.Players:GetPlayers()) do
-    -- check if this player's UserID exists in EGHUsers
+    local found = false
     for _, user in ipairs(getgenv().EGHUsers) do
         if user.UserID == plr.UserId then
-            print(plr.Name .. " is in EGHUsers ||  Premium: " .. tostring(user.Premium))
+            print(plr.Name .. " is in EGHUsers || Premium: " .. tostring(user.Premium))
+            found = true
         end
     end
+    if not found then
+        print(plr.Name .. " is NOT in EGHUsers")
+    end
 end
+
+
 
