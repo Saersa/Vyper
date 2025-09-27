@@ -43,3 +43,13 @@ for i,v in pairs(EGHUsers) do
 end
 print("---------------------")
 
+-- loop through all players in the game
+for _, plr in pairs(game.Players:GetPlayers()) do
+    -- check if this player's UserID exists in EGHUsers
+    for _, user in ipairs(getgenv().EGHUsers) do
+        if user.UserID == plr.UserId then
+            print(plr.Name .. " is in EGHUsers ||  Premium: " .. tostring(user.Premium))
+        end
+    end
+end
+
