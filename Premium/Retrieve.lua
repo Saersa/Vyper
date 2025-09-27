@@ -46,26 +46,16 @@ for _, User in ipairs(decoded_or_err) do
 end
 
 
-print("---------------------")
-for i,v in pairs(EGHUsers) do
-	for k,a in pairs(v) do
-		print(k..":"..tostring(a))
-	end
-print("---------------------")
-end
 
 for _, plr in pairs(game.Players:GetPlayers()) do
     local found = false
     for _, user in ipairs(getgenv().EGHUsers) do
         if user.UserID == plr.UserId then
-            print(plr.Name .. " is in EGHUsers || Premium: " .. tostring(user.Premium))
             found = true
         end
     end
-    if not found then
-        print(plr.Name .. " is NOT in EGHUsers")
-    end
 end
+
 
 
 
