@@ -9638,7 +9638,7 @@ TextXAlignment="Left",
 Name="DisplayName"
 }),
 ai("TextLabel",{
-Text=aq.User.Anonymous and"@Anonymous" or aq.User.DisplayNameor or "@".. game.Players.LocalPlayer.Name,
+Text=aq.User.Anonymous and"@Anonymous" or aq.User.DisplayName or "@".. game.Players.LocalPlayer.Name,
 TextSize=15,
 TextTransparency=.6,
 ThemeTag={
