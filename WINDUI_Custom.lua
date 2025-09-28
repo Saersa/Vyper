@@ -1,7 +1,3 @@
---// Modified by doran4
---// v1.6.53  |  2025-09-28  |  Roblox UI Library for scripts
-
-
 --[[
      _      ___         ____  ______
     | | /| / (_)__  ___/ / / / /  _/
@@ -3057,7 +3053,7 @@ Translucent = {
     Background  = "#2a2a2a",  -- translucent dark gray
     Button      = "#4f6ef7",  -- muted blue for buttons
     Icon        = "#56d4f9",  -- bright cyan for icons
-}
+},
 
 
 
