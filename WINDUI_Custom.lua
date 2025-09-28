@@ -1,4 +1,3 @@
-
 --[[
      _      ___         ____  ______
     | | /| / (_)__  ___/ / / / /  _/
@@ -9639,7 +9638,7 @@ TextXAlignment="Left",
 Name="DisplayName"
 }),
 ai("TextLabel",{
-Text=aq.User.Anonymous and"@Anonymous" or aq.User.Name or "@".. game.Players.LocalPlayer.Name,
+Text=aq.User.Anonymous and"@Anonymous" or aq.User.DisplayName or "@".. game.Players.LocalPlayer.Name,
 TextSize=15,
 TextTransparency=.6,
 ThemeTag={
