@@ -5,8 +5,7 @@
     |__/|__/_/_//_/\_,_/\____/___/
     
     v1.6.53  |  2025-09-28  |  Roblox UI Library for scripts
-    Modified by doran4
-
+    Modified by: Vyper Development Team
     
     To view the source code, see the `src/` folder on the official GitHub repository.
     
@@ -2890,8 +2889,8 @@ Background=Color3.fromHex"#101010",
 Button=Color3.fromHex"#52525b",
 Icon=Color3.fromHex"#a1a1aa"
 },
-RazerRed={
-Name="Razer Red",
+VyperRed={
+Name="Vyper Red",
 
 Accent=Color3.fromHex"#FFFFFF",
 Dialog=Color3.fromHex"#121212",
@@ -2903,8 +2902,8 @@ Button=Color3.fromHex"#1E1E1E",
 Icon=Color3.fromHex"#CFCFCF"
 },
 
-Razer={
-Name="Razer",
+Vyper={
+Name="Vyper",
 
 Accent=Color3.fromHex"#080808",
 Dialog=Color3.fromHex"#0C0C0C",
