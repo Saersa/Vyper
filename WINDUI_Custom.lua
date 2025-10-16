@@ -611,7 +611,7 @@ Colors={
 }.IconFrame
 J.Parent=H
 elseif string.find(u,"http")then
-local J="VantaX/"..B.."/Assets/."..C.."-"..v..".png"
+local J="Vyper/"..B.."/Assets/."..C.."-"..v..".png"
 local L,M=pcall(function()
 task.spawn(function()
 if not isfile(J)then
@@ -3664,12 +3664,12 @@ end
 
 ab=ae
 ac.Folder=ab.Folder
-ac.Path="VantaX/config/"
+ac.Path="Vyper/config/"
 
-if not isfolder("VantaX")then
-makefolder("VantaX")
-if not isfolder("VantaX/config/")then
-makefolder("VantaX/config/")
+if not isfolder("Vyper")then
+makefolder("Vyper")
+if not isfolder("Vyper/config/")then
+makefolder("Vyper/config/")
 end
 end
 
@@ -9390,7 +9390,7 @@ aq.Resizable=true
 end
 
 if aq.Folder then
-makefolder("VantaX/")
+makefolder("Vyper/")
 end
 
 local as=ai("UICorner",{
@@ -11263,8 +11263,8 @@ ac:SetLanguage(ak.Language)
 function ac.CreateWindow(as,at)
 local av=a.load'W'
 
-if not isfolder"VantaX"then
-makefolder"VantaX"
+if not isfolder"Vyper"then
+makefolder"Vyper"
 end
 if at.Folder then
 makefolder(at.Folder)
