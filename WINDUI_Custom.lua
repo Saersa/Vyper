@@ -11376,9 +11376,10 @@ ac:SetLanguage(ak.Language)
 function ac.CreateWindow(as,at)
 local av=a.load'W'
 
-if not isfolder"Vyper"then
-makefolder"Vyper"
+if not isfolder("Vyper")then
+makefolder("Vyper")
 end
+
 if at.Folder then
 makefolder(at.Folder)
 else
