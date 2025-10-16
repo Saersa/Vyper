@@ -5,8 +5,7 @@
     |__/|__/_/_//_/\_,_/\____/___/
     
     v1.6.54  |  2025-10-09  |  Roblox UI Library for scripts
-    Modified by: Vyper Developer Team
-
+    
     This script is NOT intended to be modified.
     To view the source code, see the `src/` folder on the official GitHub repository.
     
@@ -615,7 +614,7 @@ Colors={
 }.IconFrame
 J.Parent=H
 elseif string.find(u,"http")then
-local J="Vyper/"..B.."/assets/."..C.."-"..v..".png"
+local J="WindUI/"..B.."/assets/."..C.."-"..v..".png"
 local L,M=pcall(function()
 task.spawn(function()
 if not isfile(J)then
@@ -2926,6 +2925,10 @@ Icon=Color3.fromHex"#44C32C"
 },
 
 
+
+
+
+
 Light={
 Name="Light",
 
@@ -3650,6 +3653,7 @@ end
 }
 }
 
+
 function ac.Init(ad,ae)
 if not ae.Folder then
 warn"[ WindUI.ConfigManager ] Window.Folder is not specified."
@@ -3660,8 +3664,8 @@ ab=ae
 ac.Folder=ab.Folder
 ac.Path="Vyper/config/"
 
-if not isfolder("Vyper/")then
-makefolder("Vyper/")
+if not isfolder("Vyper")then
+makefolder("Vyper")
 if not isfolder("Vyper/config/")then
 makefolder("Vyper/config/")
 end
@@ -3697,7 +3701,6 @@ end
 function af.Register(ag,ah,ai)
 af.Elements[ah]=ai
 end
-
 function af:RegisterAll(tabContainer)
     if not tabContainer or type(tabContainer.Tabs) ~= "table" then
         return
@@ -3712,6 +3715,7 @@ function af:RegisterAll(tabContainer)
         end
     end
 end
+
 
 
 function af.Set(ag,ah,ai)
@@ -9460,8 +9464,8 @@ if ar.Folder then
 if not isfolder("Vyper/"..ar.Folder)then
 makefolder("Vyper/"..ar.Folder)
 end
-if not isfolder("Vyper/"..ar.Folder.."/assets")then
-makefolder("Vyper/"..ar.Folder.."/assets")
+if not isfolder("Vyper/assets")then
+makefolder("Vyper/assets")
 end
 if not isfolder(ar.Folder)then
 makefolder(ar.Folder)
@@ -9734,7 +9738,6 @@ BackgroundTransparency=1,
 },{
 aj("TextLabel",{
 Text=ar.User.Anonymous and"Anonymous"or ar.User.DisplayName or game.Players.LocalPlayer.DisplayName,
---ar.User.Anonymous and"Anonymous"or game.Players.LocalPlayer.DisplayName,
 TextSize=17,
 ThemeTag={
 TextColor3="Text",
@@ -9748,7 +9751,7 @@ TextXAlignment="Left",
 Name="DisplayName"
 }),
 aj("TextLabel",{
-Text= ar.User.Anonymous and"@Anonymous" or ar.User.UserName or "@"..game.Players.LocalPlayer.Name,
+Text=ar.User.Anonymous and "@Anonymous" or ar.User.UserName or "@".. game.Players.LocalPlayer.Name,
 TextSize=15,
 TextTransparency=.6,
 ThemeTag={
@@ -11376,8 +11379,8 @@ ac:SetLanguage(ak.Language)
 function ac.CreateWindow(as,at)
 local av=a.load'W'
 
-if not isfolder("Vyper")then
-makefolder("Vyper")
+if not isfolder"WindUI"then
+makefolder"WindUI"
 end
 
 if at.Folder then
