@@ -5,7 +5,8 @@
     |__/|__/_/_//_/\_,_/\____/___/
     
     v1.6.54  |  2025-10-09  |  Roblox UI Library for scripts
-    
+    Modified by: Vyper Developer Team
+
     This script is NOT intended to be modified.
     To view the source code, see the `src/` folder on the official GitHub repository.
     
@@ -3657,12 +3658,12 @@ end
 
 ab=ae
 ac.Folder=ab.Folder
-ac.Path="Vyper/"..tostring(ac.Folder).."/config/"
+ac.Path="Vyper/config/"
 
-if not isfolder("Vyper/"..ac.Folder)then
-makefolder("Vyper/"..ac.Folder)
-if not isfolder("Vyper/"..ac.Folder.."/config/")then
-makefolder("Vyper/"..ac.Folder.."/config/")
+if not isfolder("Vyper/")then
+makefolder("Vyper/")
+if not isfolder("Vyper/config/")then
+makefolder("Vyper/config/")
 end
 end
 
