@@ -11379,8 +11379,8 @@ ac:SetLanguage(ak.Language)
 function ac.CreateWindow(as,at)
 local av=a.load'W'
 
-if not isfolder"WindUI"then
-makefolder"WindUI"
+if not isfolder"Vyper"then
+makefolder"Vyper"
 end
 
 if at.Folder then
