@@ -2920,7 +2920,7 @@ Outline=Color3.fromHex"#FFFFFF",
 Text=Color3.fromHex"#FFFFFF",
 Placeholder=Color3.fromHex"#FFFFFF",
 Background=Color3.fromHex"#0e0e10",
-Button=Color3.fromHex"#1E1E1E",
+Button=Color3.fromHex"#666666",
 Icon=Color3.fromHex"#44C32C"
 },
 
