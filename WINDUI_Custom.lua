@@ -9737,7 +9737,7 @@ AutomaticSize="XY",
 BackgroundTransparency=1,
 },{
 aj("TextLabel",{
-Text=ar.User.Anonymous and"Anonymous"or ar.User.DisplayName orgame:GetService("Players").LocalPlayer.DisplayName,
+Text=ar.User.Anonymous and"Anonymous"or ar.User.DisplayName or game:GetService("Players").LocalPlayer.DisplayName,
 TextSize=17,
 ThemeTag={
 TextColor3="Text",
