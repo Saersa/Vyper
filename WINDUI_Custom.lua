@@ -8139,7 +8139,7 @@ end,
 
 }end function a.S()
 game:GetService"UserInputService"
-local ac=game.Players.LocalPlayer:GetMouse()
+local ac=game:GetService("Players").LocalPlayer:GetMouse()
 
 local ae=a.load'a'
 local ag=ae.New
@@ -9670,7 +9670,7 @@ local az
 if ar.User then
 local function GetUserThumb()local
 aA, aB=game:GetService"Players":GetUserThumbnailAsync(
-ar.User.Anonymous and 1 or game.Players.LocalPlayer.UserId,
+ar.User.Anonymous and 1 or game:GetService("Players").LocalPlayer.UserId,
 Enum.ThumbnailType.HeadShot,
 Enum.ThumbnailSize.Size420x420
 )
@@ -9737,7 +9737,7 @@ AutomaticSize="XY",
 BackgroundTransparency=1,
 },{
 aj("TextLabel",{
-Text=ar.User.Anonymous and"Anonymous"or ar.User.DisplayName or game.Players.LocalPlayer.DisplayName,
+Text=ar.User.Anonymous and"Anonymous"or ar.User.DisplayName orgame:GetService("Players").LocalPlayer.DisplayName,
 TextSize=17,
 ThemeTag={
 TextColor3="Text",
@@ -9751,7 +9751,7 @@ TextXAlignment="Left",
 Name="DisplayName"
 }),
 aj("TextLabel",{
-Text=ar.User.Anonymous and "@Anonymous" or ar.User.UserName or "@".. game.Players.LocalPlayer.Name,
+Text=ar.User.Anonymous and "@Anonymous" or ar.User.UserName or "@".. game:GetService("Players").LocalPlayer.Name,
 TextSize=15,
 TextTransparency=.6,
 ThemeTag={
@@ -9797,8 +9797,8 @@ function ar.User.SetAnonymous(aA,aB)
 if aB~=false then aB=true end
 ar.User.Anonymous=aB
 az.UserIcon.ImageLabel.Image=GetUserThumb()
-az.UserIcon.Frame.DisplayName.Text=aB and"Anonymous"or game.Players.LocalPlayer.DisplayName
-az.UserIcon.Frame.UserName.Text=aB and"@Anonymous"or game.Players.LocalPlayer.Name
+az.UserIcon.Frame.DisplayName.Text=aB and"Anonymous"or game:GetService("Players").LocalPlayer.DisplayName
+az.UserIcon.Frame.UserName.Text=aB and"@Anonymous"or game:GetService("Players").LocalPlayer.Name
 end
 
 if ar.User.Enabled then
@@ -11196,7 +11196,7 @@ game:GetService"Players"and game:GetService"Players".LocalPlayer or nil
 
 local ap=protectgui or(syn and syn.protect_gui)or function()end
 
-local aq=gethui and gethui()or(game.CoreGui or game.Players.LocalPlayer:WaitForChild"PlayerGui")
+local aq=gethui and gethui()or(game.CoreGui or game:GetService("Players").LocalPlayer:WaitForChild"PlayerGui")
 
 
 ac.ScreenGui=al("ScreenGui",{
