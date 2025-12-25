@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/096d306475ef425383b0e528cf039c8d"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Saersa/Vyper/refs/heads/main/Loader.lua"))()
