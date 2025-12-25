@@ -1,4 +1,4 @@
-local url = "https://raw.githubusercontent.com/Saersa/EGH_2.0/refs/heads/main/Games"
+local url = "https://raw.githubusercontent.com/Saersa/Vyper/refs/heads/main/Games"
 
 local games = {
 	  [13076380114] = "HBG"; -- GameID, script name
