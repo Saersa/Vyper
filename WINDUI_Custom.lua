@@ -5234,7 +5234,7 @@ end
 end
 end
 
-function ag.SetImage(aF,b)
+function ag.SetImage(aE,aF,b)
 ag.Image=aF
 if b then
 ag.ImageSize=b
